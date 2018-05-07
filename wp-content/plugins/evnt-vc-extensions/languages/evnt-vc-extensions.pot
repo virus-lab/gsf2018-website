@@ -1,0 +1,675 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Evnt VC Extensions\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-03 12:22+0100\n"
+"PO-Revision-Date: 2016-11-03 12:22+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: admin/extend-vc.php:7
+msgid "HGroup"
+msgstr ""
+
+#: admin/extend-vc.php:9
+msgid "Header group (title and subtitle)"
+msgstr ""
+
+#: admin/extend-vc.php:19
+msgid "Main Title"
+msgstr ""
+
+#: admin/extend-vc.php:25 admin/extend-vc.php:51 admin/extend-vc.php:477
+#: admin/extend-vc.php:483 admin/extend-vc.php:516 admin/extend-vc.php:976
+msgid "Subtitle"
+msgstr ""
+
+#: admin/extend-vc.php:31
+msgid "Center text"
+msgstr ""
+
+#: admin/extend-vc.php:40 admin/extend-vc.php:69 admin/extend-vc.php:258
+#: admin/extend-vc.php:315 admin/extend-vc.php:588 admin/extend-vc.php:948
+msgid "Extra class name"
+msgstr ""
+
+#: admin/extend-vc.php:42 admin/extend-vc.php:71 admin/extend-vc.php:260
+#: admin/extend-vc.php:317 admin/extend-vc.php:590
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: admin/extend-vc.php:53
+msgid "Add a subtitle"
+msgstr ""
+
+#: admin/extend-vc.php:63 admin/extend-vc.php:113 admin/extend-vc.php:501
+#: admin/extend-vc.php:606 admin/extend-vc.php:690 admin/extend-vc.php:719
+#: admin/extend-vc.php:769 admin/extend-vc.php:971 admin/extend-vc.php:1064
+#: admin/extend-vc.php:1110 admin/extend-vc.php:1200
+msgid "Title"
+msgstr ""
+
+#: admin/extend-vc.php:79
+msgid "Pricing Table"
+msgstr ""
+
+#: admin/extend-vc.php:81
+msgid "Title, options list and button"
+msgstr ""
+
+#: admin/extend-vc.php:91 admin/extend-vc.php:286 admin/extend-vc.php:803
+msgid "Visible Items"
+msgstr ""
+
+#: admin/extend-vc.php:104
+msgid "WooCommerce integration"
+msgstr ""
+
+#: admin/extend-vc.php:119
+msgid "Short description"
+msgstr ""
+
+#: admin/extend-vc.php:125
+msgid "Product ID"
+msgstr ""
+
+#: admin/extend-vc.php:134
+msgid "Unit"
+msgstr ""
+
+#: admin/extend-vc.php:140
+msgid "Currency sign"
+msgstr ""
+
+#: admin/extend-vc.php:151
+msgid "Price"
+msgstr ""
+
+#: admin/extend-vc.php:162
+msgid "Discout"
+msgstr ""
+
+#: admin/extend-vc.php:173
+msgid "List"
+msgstr ""
+
+#: admin/extend-vc.php:190
+msgid "Link"
+msgstr ""
+
+#: admin/extend-vc.php:199
+msgid "Button Text"
+msgstr ""
+
+#: admin/extend-vc.php:208
+msgid "Highlight"
+msgstr ""
+
+#: admin/extend-vc.php:221
+msgid "Sponsor Grid"
+msgstr ""
+
+#: admin/extend-vc.php:223
+msgid "Show brand sponsors in a nice grid"
+msgstr ""
+
+#: admin/extend-vc.php:235
+msgid "Grid Layout"
+msgstr ""
+
+#: admin/extend-vc.php:245 admin/extend-vc.php:831
+msgid "Columns"
+msgstr ""
+
+#: admin/extend-vc.php:272
+msgid "Sponsor Carousel"
+msgstr ""
+
+#: admin/extend-vc.php:274
+msgid "Show brand sponsors in a nice carousel"
+msgstr ""
+
+#: admin/extend-vc.php:299
+msgid "Navigation arrows"
+msgstr ""
+
+#: admin/extend-vc.php:308
+msgid "Autoplay"
+msgstr ""
+
+#: admin/extend-vc.php:311
+msgid ""
+"Accepted values: true, false, or time in milliseconds like 5000, which will "
+"be 5 seconds."
+msgstr ""
+
+#: admin/extend-vc.php:324 admin/extend-vc.php:346
+msgid "Sponsor Item"
+msgstr ""
+
+#: admin/extend-vc.php:333 admin/extend-vc.php:355
+msgid "Sponsor"
+msgstr ""
+
+#: admin/extend-vc.php:338 admin/extend-vc.php:360
+msgid "URL"
+msgstr ""
+
+#: admin/extend-vc.php:340 admin/extend-vc.php:362 admin/extend-vc.php:404
+#: admin/extend-vc.php:518 admin/extend-vc.php:524 admin/extend-vc.php:530
+#: admin/extend-vc.php:536 admin/extend-vc.php:542 admin/extend-vc.php:548
+#: admin/extend-vc.php:1188
+msgid "Optional."
+msgstr ""
+
+#: admin/extend-vc.php:373
+msgid "Progress Bar"
+msgstr ""
+
+#: admin/extend-vc.php:375
+msgid "Show progress bar container"
+msgstr ""
+
+#: admin/extend-vc.php:388
+msgid "Progress bar item"
+msgstr ""
+
+#: admin/extend-vc.php:397
+msgid "Progress bar percent"
+msgstr ""
+
+#: admin/extend-vc.php:402
+msgid "Progress bar label text"
+msgstr ""
+
+#: admin/extend-vc.php:445
+msgid "Map"
+msgstr ""
+
+#: admin/extend-vc.php:447
+msgid "Show map container"
+msgstr ""
+
+#: admin/extend-vc.php:465
+msgid "Center map Lat"
+msgstr ""
+
+#: admin/extend-vc.php:467
+msgid "Example: 52.520343301190614"
+msgstr ""
+
+#: admin/extend-vc.php:471
+msgid "Center map Lng"
+msgstr ""
+
+#: admin/extend-vc.php:473
+msgid "Example: 373.4041194381714"
+msgstr ""
+
+#: admin/extend-vc.php:479
+msgid "Zoom (Default = 14)"
+msgstr ""
+
+#: admin/extend-vc.php:485
+msgid "Map language (Default = en)"
+msgstr ""
+
+#: admin/extend-vc.php:492
+msgid "Map item"
+msgstr ""
+
+#: admin/extend-vc.php:506
+msgid "Lat"
+msgstr ""
+
+#: admin/extend-vc.php:511
+msgid "Lng"
+msgstr ""
+
+#: admin/extend-vc.php:522 admin/extend-vc.php:1084
+msgid "Phone"
+msgstr ""
+
+#: admin/extend-vc.php:528 admin/extend-vc.php:1069
+msgid "Address"
+msgstr ""
+
+#: admin/extend-vc.php:534 admin/extend-vc.php:1089
+#: public/vc_templates/evnt_newsletter_form.php:47
+msgid "Email"
+msgstr ""
+
+#: admin/extend-vc.php:540
+msgid "Web"
+msgstr ""
+
+#: admin/extend-vc.php:546
+msgid "Icon"
+msgstr ""
+
+#: admin/extend-vc.php:574
+msgid "Counter Up"
+msgstr ""
+
+#: admin/extend-vc.php:576
+msgid "Stat counter with animation"
+msgstr ""
+
+#: admin/extend-vc.php:597
+msgid "Counter Up Item"
+msgstr ""
+
+#: admin/extend-vc.php:611
+msgid "Value"
+msgstr ""
+
+#: admin/extend-vc.php:648
+msgid "Countdown"
+msgstr ""
+
+#: admin/extend-vc.php:650
+msgid "Countdown clock with days, hours, minutes and seconds"
+msgstr ""
+
+#: admin/extend-vc.php:660
+msgid "Year"
+msgstr ""
+
+#: admin/extend-vc.php:666
+msgid "Month"
+msgstr ""
+
+#: admin/extend-vc.php:672
+msgid "Day"
+msgstr ""
+
+#: admin/extend-vc.php:678
+msgid "Hour"
+msgstr ""
+
+#: admin/extend-vc.php:684 public/vc_templates/countdown.php:59
+msgid "Minute"
+msgstr ""
+
+#: admin/extend-vc.php:684 public/vc_templates/countdown.php:52
+msgid "Minutes"
+msgstr ""
+
+#: admin/extend-vc.php:696 admin/extend-vc.php:725 admin/extend-vc.php:775
+msgid "description"
+msgstr ""
+
+#: admin/extend-vc.php:707
+msgid "Service Widget "
+msgstr ""
+
+#: admin/extend-vc.php:709
+msgid "Company service with icon, heading and small description"
+msgstr ""
+
+#: admin/extend-vc.php:731
+msgid "Url"
+msgstr ""
+
+#: admin/extend-vc.php:737
+msgid "Backgroud color"
+msgstr ""
+
+#: admin/extend-vc.php:746 admin/extend-vc.php:781
+msgid "Icon FA"
+msgstr ""
+
+#: admin/extend-vc.php:748 admin/extend-vc.php:783
+msgid "Select icon from library."
+msgstr ""
+
+#: admin/extend-vc.php:757
+msgid "Feature box"
+msgstr ""
+
+#: admin/extend-vc.php:759
+msgid "Add a box with title, description and nice icons on the left hand side"
+msgstr ""
+
+#: admin/extend-vc.php:762 admin/extend-vc.php:795
+msgid "Evnt Custom"
+msgstr ""
+
+#: admin/extend-vc.php:792
+msgid "Speakers Gallery"
+msgstr ""
+
+#: admin/extend-vc.php:794
+msgid "Speakers list with links to profile pages"
+msgstr ""
+
+#: admin/extend-vc.php:814
+msgid "Items to display"
+msgstr ""
+
+#: admin/extend-vc.php:820
+msgid "Tags"
+msgstr ""
+
+#: admin/extend-vc.php:826
+msgid ""
+"If you want to display only specific filtering options (tags) here, please "
+"enter their names, one per line."
+msgstr ""
+
+#: admin/extend-vc.php:842
+msgid "Categories"
+msgstr ""
+
+#: admin/extend-vc.php:844
+msgid ""
+"If you want to narrow output, enter category names here. Note: Only listed "
+"categories will be included. Divide categories with linebreaks (Enter)."
+msgstr ""
+
+#: admin/extend-vc.php:849
+msgid "Order By"
+msgstr ""
+
+#: admin/extend-vc.php:860
+msgid "Order"
+msgstr ""
+
+#: admin/extend-vc.php:871
+msgid "Selected Posts"
+msgstr ""
+
+#: admin/extend-vc.php:873
+msgid ""
+"Show only selected posts. Input post ID's separated with comma. Example: "
+"16,58,24."
+msgstr ""
+
+#: admin/extend-vc.php:883
+msgid "Button"
+msgstr ""
+
+#: admin/extend-vc.php:885
+msgid " Button with editable text, link, background and color"
+msgstr ""
+
+#: admin/extend-vc.php:896 admin/extend-vc.php:981 admin/extend-vc.php:1122
+msgid "Link & Title"
+msgstr ""
+
+#: admin/extend-vc.php:902
+msgid "Color"
+msgstr ""
+
+#: admin/extend-vc.php:917
+msgid "Size"
+msgstr ""
+
+#: admin/extend-vc.php:928
+msgid "Full Width"
+msgstr ""
+
+#: admin/extend-vc.php:938
+msgid "Align"
+msgstr ""
+
+#: admin/extend-vc.php:951
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: admin/extend-vc.php:959
+msgid "Featured item"
+msgstr ""
+
+#: admin/extend-vc.php:961
+msgid ""
+"Add a feature item with big photo, title, subtitle and description. Edit "
+"background color, text color and choose image side. "
+msgstr ""
+
+#: admin/extend-vc.php:987
+msgid "Image Side"
+msgstr ""
+
+#: admin/extend-vc.php:997
+msgid "Background color"
+msgstr ""
+
+#: admin/extend-vc.php:1000
+msgid "Choose background color"
+msgstr ""
+
+#: admin/extend-vc.php:1005
+msgid "Title text color"
+msgstr ""
+
+#: admin/extend-vc.php:1008
+msgid "Choose title text color"
+msgstr ""
+
+#: admin/extend-vc.php:1013
+msgid "Primary text color"
+msgstr ""
+
+#: admin/extend-vc.php:1016
+msgid "Choose text color"
+msgstr ""
+
+#: admin/extend-vc.php:1021
+msgid "Secondary text color"
+msgstr ""
+
+#: admin/extend-vc.php:1024
+msgid "Choose secondary text color"
+msgstr ""
+
+#: admin/extend-vc.php:1028
+msgid "Image"
+msgstr ""
+
+#: admin/extend-vc.php:1034
+msgid "Add image zoom on hover"
+msgstr ""
+
+#: admin/extend-vc.php:1043
+msgid "text"
+msgstr ""
+
+#: admin/extend-vc.php:1052
+msgid "Address "
+msgstr ""
+
+#: admin/extend-vc.php:1054
+msgid "Add address widget with title, address, phone and email"
+msgstr ""
+
+#: admin/extend-vc.php:1074
+msgid "Address line 2"
+msgstr ""
+
+#: admin/extend-vc.php:1079
+msgid "Address line 3"
+msgstr ""
+
+#: admin/extend-vc.php:1098
+msgid "Sitemap "
+msgstr ""
+
+#: admin/extend-vc.php:1100
+msgid "Add list of your website pages"
+msgstr ""
+
+#: admin/extend-vc.php:1136
+msgid "Gallery "
+msgstr ""
+
+#: admin/extend-vc.php:1138
+msgid "Add a gallery grid with links to bigger images"
+msgstr ""
+
+#: admin/extend-vc.php:1148
+msgid "Images"
+msgstr ""
+
+#: admin/extend-vc.php:1160
+msgid "Floor plan "
+msgstr ""
+
+#: admin/extend-vc.php:1162
+msgid "Add tabs with floor plan images"
+msgstr ""
+
+#: admin/extend-vc.php:1173
+msgid "Floor Plan tabs item "
+msgstr ""
+
+#: admin/extend-vc.php:1176
+msgid "Add another tab item"
+msgstr ""
+
+#: admin/extend-vc.php:1181
+msgid "Tabs name"
+msgstr ""
+
+#: admin/extend-vc.php:1186
+msgid "Floor plan image"
+msgstr ""
+
+#: admin/extend-vc.php:1193
+msgid "Floor Plan item "
+msgstr ""
+
+#: admin/extend-vc.php:1205
+msgid "Point sign"
+msgstr ""
+
+#: admin/extend-vc.php:1219
+msgid "Horizontal line "
+msgstr ""
+
+#: admin/extend-vc.php:1221
+msgid "Add horizontal line"
+msgstr ""
+
+#: admin/extend-vc.php:1239
+msgid "Newsletter form"
+msgstr ""
+
+#: admin/extend-vc.php:1241
+msgid "Add subscription input and button"
+msgstr ""
+
+#: admin/extend-vc.php:1251
+msgid "Newsletter Template"
+msgstr ""
+
+#: admin/extend-vc.php:1279
+msgid "Color Scheme"
+msgstr ""
+
+#: admin/extend-vc.php:1281
+msgid ""
+"This parameter allow you to switch beetwen of 3 various color sets (for "
+"title, subtitle, text and link colors). You can manage these colors sets in "
+"theme options panel."
+msgstr ""
+
+#: admin/extend-vc.php:1283
+msgid "Default"
+msgstr ""
+
+#: admin/extend-vc.php:1284
+msgid "Alternative"
+msgstr ""
+
+#: admin/extend-vc.php:1299
+msgid "No contact forms found"
+msgstr ""
+
+#: admin/extend-vc.php:1305
+msgid "Contact Form 7"
+msgstr ""
+
+#: admin/extend-vc.php:1307
+msgid "Content"
+msgstr ""
+
+#: admin/extend-vc.php:1308
+msgid "Place Contact Form7"
+msgstr ""
+
+#: admin/extend-vc.php:1312
+msgid "Form title"
+msgstr ""
+
+#: admin/extend-vc.php:1315
+msgid "What text use as form title. Leave blank if no title is needed."
+msgstr ""
+
+#: admin/extend-vc.php:1319
+msgid "Select contact form"
+msgstr ""
+
+#: admin/extend-vc.php:1323
+msgid "Choose previously created contact form from the drop down list."
+msgstr ""
+
+#: admin/extend-vc.php:1327
+msgid "Contact Form 7 Template"
+msgstr ""
+
+#: public/vc_templates/countdown.php:50
+msgid "Days"
+msgstr ""
+
+#: public/vc_templates/countdown.php:51
+msgid "Hours"
+msgstr ""
+
+#: public/vc_templates/countdown.php:63
+msgid "Second"
+msgstr ""
+
+#: public/vc_templates/countdown.php:53
+msgid "Seconds"
+msgstr ""
+
+#: public/vc_templates/recent-blog-posts.php:83
+msgid "No Comments"
+msgstr ""
+
+#: public/vc_templates/recent-blog-posts.php:85
+msgid " Comments"
+msgstr ""
+
+#: public/vc_templates/recent-blog-posts.php:87
+msgid "1 Comment"
+msgstr ""
+
+#: public/vc_templates/recent-blog-posts.php:98
+msgid "Read more"
+msgstr ""
+
+#: public/vc_templates/evnt_newsletter_form.php:50
+msgid "Subscribe"
+msgstr ""
+
+#: public/vc_templates/speaker_gallery.php:122
+msgid "View profile"
+msgstr ""

@@ -1,0 +1,5 @@
+.wcs-settings{
+	&__title + :not(&__container){
+		display: none !important;
+	}
+}

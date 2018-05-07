@@ -1,0 +1,2186 @@
+// Variables
+// =============================================================
+
+// Fonts
+$font-body:					"Lato", sans-serif;
+$font-heading:				"Economica", sans-serif;
+
+// Colors
+$white:						#fff;
+$black:						#222;
+$gray:						#888;
+$light:						#e6e4dd;
+$alt:						#f1f0ec;
+$brand:						#be1a39;
+
+// Body
+$background-body:			$white;
+$color-body:				$gray;
+
+// Headings
+$color-heading:				$black;
+
+// Links
+$color-link:				$brand;
+$color-link-hover:			lighten($color-link, 15%);
+
+// Buttons
+$button-primary:			$brand;
+$button-primary-hover:		lighten($button-primary, 15%);
+$button-secondary:			$black;
+$button-secondary-hover:	lighten($button-secondary, 15%);
+$button-default:			$white;
+$button-default-hover:		darken($button-default, 5%);
+
+// Borders
+$color-border:				$light;
+
+// Paddings
+$padding-default:			0.5rem 1rem;
+$padding-small:				0.25rem 0.5rem;
+$padding-large:				1rem 2rem;
+$padding-section:			8rem 0;
+
+// Border radius
+@mixin border-radius($radius) {
+	-webkit-border-radius:	$radius;
+	-moz-border-radius:		$radius;
+	-ms-border-radius:		$radius;
+	border-radius:			$radius;
+}
+$radius-default:			3px;
+$radius-small:				2px;
+$radius-large:				4px;
+
+// Rotate
+@mixin rotate($rotate) {
+	-webkit-transform:		rotate($rotate);
+	-moz-transform:			rotate($rotate);
+	-ms-transform:			rotate($rotate);
+	-o-transform:			rotate($rotate);
+	transform:				rotate($rotate);
+}
+
+// Horizontal flip
+@mixin rotateY($rotateY) {
+	-webkit-transform:		rotateY($rotateY);
+	-moz-transform:			rotateY($rotateY);
+	-ms-transform:			rotateY($rotateY);
+	-o-transform:			rotateY($rotateY);
+	transform:				rotateY($rotateY);
+}
+
+// Vertical flip
+@mixin rotateX($rotateX) {
+	-webkit-transform:		rotateX($rotateX);
+	-moz-transform:			rotateX($rotateX);
+	-ms-transform:			rotateX($rotateX);
+	-o-transform:			rotateX($rotateX);
+	transform:				rotateX($rotateX);
+}
+
+// Transition time
+@mixin transition($transition) {
+	transition:				all ($transition) ease;
+	-moz-transition:		all ($transition) ease;
+	-webkit-transition:		all ($transition) ease;
+	-o-transition:			all ($transition) ease;
+}
+
+// Translate
+@mixin translate($translate) {
+	transform:				translateY($translate);
+	-moz-transform:			translateY($translate);
+	-webkit-transform:		translateY($translate);
+	-o-transform:			translateY($translate);
+}
+
+// Horizontal rules
+$hr-blank-border:			0;
+$hr-blank-margin:			0 0 2rem;
+$hr-thin-border:			1px solid $color-border;
+$hr-thin-margin:			3rem 0 4rem;
+$hr-thick-border:			3px solid $color-border;
+$hr-thick-margin:			4rem 0 5rem;
+
+// grayscale
+@mixin grayscale($grayscale) {
+	-webkit-filter:			grayscale($grayscale);
+	-moz-filter:			grayscale($grayscale);
+	-ms-filter:				grayscale($grayscale);
+	-o-filter:				grayscale($grayscale);
+	filter:					gray;
+}
+
+/* Stylesheet imports
+===============================================================*/
+
+@import "bootstrap.min.css";
+@import "font-awesome.min.css";
+@import "superslides.css";
+@import "webslidemenu.css";
+@import "uber-google-maps.css";
+@import "lightgallery.css";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Economica:700);
+
+/*===============================================================
+
+Table of content:
+
+1. Global styles
+	1.1. Body
+	1.2. Headings
+	1.3. Links
+	1.4. Buttons
+	1.5. Sections
+	1.6. Horizontal rules
+	1.7. Address, phone, email
+	1.8. Lists
+2. Header
+	2.1. Logo
+	2.2. Desktop nav
+	2.3. Mobile nav
+3. Slider
+	3.1. Slider content
+	3.2. Countdown
+4. Main content
+	4.1. Welcome
+	4.2. Speaker lists
+		4.2.1. Speaker list type 1
+		4.2.2. Speaker list type 2
+		4.2.3. Speaker list type 3
+		4.2.4. Speaker list type 4
+	4.3. Schedule
+		4.3.1. Schedule type 1
+		4.3.2. Schedule type 2
+		4.3.3. Schedule type 3
+		4.3.4. Schedule type 4
+	4.4. Features
+	4.5. Price tables
+		4.5.1. Price table 1
+		4.5.2. Price table 2
+		4.5.3. Price table 3
+		4.5.4. Price table 4
+	4.6. Forms
+	4.7. Tabs
+	4.8. Sponsors
+		4.8.1. Sponsors list 1
+		4.8.2. Sponsors list 2
+		4.8.3. Sponsors list 3
+	4.9. Venues
+	4.10. Gallery
+	4.11. Counter
+	4.12. Progress bars
+5. Footer
+6. Media queries
+
+===============================================================*/
+
+/* 1. Global styles
+===============================================================*/
+
+	/* 1.1. Body
+	-----------------------------------------------------------*/
+
+	html {
+		font-size: 100%;
+	}
+
+	body {
+		background: $background-body;
+		color: $color-body;
+		font-family: $font-body;
+		font-size: 1rem;
+		line-height: 1.75rem;
+		overflow-x: hidden;
+		padding-top: 16rem;
+		&#home {
+			padding-top: 0;
+		}
+	}
+
+	/* 1.2. Headings
+	-----------------------------------------------------------*/
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $color-heading;
+		font-family: $font-heading;
+		line-height: 1.2em;
+		margin: 0 0 2rem;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+	}
+
+	h5 {
+		font-size: 1.25rem;
+	}
+
+	h6 {
+		font-size: 1rem;
+	}
+
+	.headings {
+		margin: 0 0 2rem;
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+		}
+		h6 {
+			color: $brand;
+		}
+	}
+
+	p {
+		margin: 0 0 2rem;
+	}
+
+	/* 1.3. Links
+	-----------------------------------------------------------*/
+
+	a {
+		color: $color-link;
+		@include transition(0.3s);
+		&:hover {
+			color: $color-link-hover;
+			text-decoration: none;
+		}
+	}
+
+	/* 1.4. Buttons
+	-----------------------------------------------------------*/
+
+	.btn {
+		border: 0;
+		@include transition(0.3s);
+		@include border-radius($radius-default);
+		color: $white;
+		font-family: $font-heading;
+		font-size: 1rem;
+		padding: $padding-default;
+		text-transform: uppercase
+	}
+
+		.btn-small {
+			@include border-radius($radius-small);
+			padding: $padding-small;
+		}
+
+		.btn-large {
+			@include border-radius($radius-large);
+			padding: $padding-large;
+		}
+
+	.btn-primary {
+		background: $button-primary;
+		&:hover {
+			background: $button-primary-hover;
+			color: $white;
+		}
+	}
+
+	.btn-secondary {
+		background: $button-secondary;
+		&:hover {
+			background: $button-secondary-hover;
+			color: $white;
+		}
+	}
+
+	.btn-default {
+		background: $button-default;
+		border: 1px solid $color-border;
+		color: $color-heading;
+		&:hover {
+			background: $button-default-hover;
+		}
+	}
+
+	/* 1.5. Sections
+	-----------------------------------------------------------*/
+
+	section {
+		padding: $padding-section;
+		&.alt {
+			background: $alt;
+		}
+	}
+
+	/* 1.6. Horizontal rules
+	-----------------------------------------------------------*/
+
+	hr {
+		border-top: $hr-thin-border;
+		margin: $hr-thin-margin;
+		&:after {
+			clear: both;
+			content: "";
+			display: table;
+			width: 100%;
+		}
+		&.blank {
+			border-top: $hr-blank-border;
+			margin: $hr-blank-margin;
+		}
+		&.thick {
+			border-top: $hr-thick-border;
+			margin: $hr-thick-margin;
+		}
+	}
+
+	/* 1.7. Address
+	-----------------------------------------------------------*/
+
+	address,
+	.phone, 
+	.email {
+		padding-left: 1.5rem;
+		position: relative;
+		&:before {
+			color: $brand;
+			font-family: "FontAwesome";
+			left: 0;
+			position: absolute;
+			top: 0rem;
+		}
+	}
+
+	address:before {
+		content: "\f041";
+	}
+
+	.phone:before {
+		content: "\f095";
+	}
+
+	.email:before {
+		content: "\f0e0";
+	}
+
+	/* 1.8. Lists
+	-----------------------------------------------------------*/
+
+	ul {
+		&.circles {
+			list-style: none;
+			margin: 2rem 0;
+			padding: 0;
+			li {
+				line-height: 2rem;
+				padding: 0.5rem 0;
+				span {
+					background: $brand;
+					@include border-radius(50%);
+					color: $white;
+					display: inline-block;
+					height: 2rem;
+					margin-right: 0.5rem;
+					text-align: center;
+					width: 2rem;
+				}
+			}
+		}
+	}
+
+/* 2. Header
+===============================================================*/
+
+	header {
+		left: 0;
+		padding: 1rem 0 12rem;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+		@include transition(0.3s);
+		.header-image {
+			background: $black;
+			height: 100%;
+			left: 0;
+			opacity: 1;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			img {
+				left: 0;
+				opacity: 0.5;
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				@include translate(-50%);
+				@include transition(0.3s);
+			}
+		}
+		&.scroll {
+			background: $black;
+			padding: 0;
+			.header-image img {
+				opacity: 0;
+			}
+		}
+	}
+
+		#home header {
+			padding: 1rem 0;
+			&.scroll {
+				padding: 0;
+			}
+		}
+
+	/* 2.1. Logo
+	-----------------------------------------------------------*/
+
+	.logo {
+		float: left;
+	}
+
+	/* 2.2. Desktop nav
+	-----------------------------------------------------------*/
+
+	.wsmenu {
+		> ul > li {
+			> a {
+				font-family: $font-heading;
+				text-transform: uppercase;
+			}
+			&:hover {
+				background: $button-primary;
+			}
+			ul {
+				box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+				margin: 0;
+				padding: 0;
+				li {
+					position: relative;
+					margin: 0px;
+					padding:0px;
+					a {
+						background: $background-body;
+						color: $color-heading;
+						display: block;
+						font-size: 0.85rem;
+						padding: $padding-default;
+						text-align: left;
+						text-transform: none;
+						width: 10rem;
+						&:hover {
+							background: $alt;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* 2.3. Mobile nav
+	-----------------------------------------------------------*/
+
+/* 3. Slider
+===============================================================*/
+
+#slider {
+	.tint {
+		background: #000;
+		bottom: 0;
+		left: 0;
+		opacity: 0.5;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 10;
+	}
+	.slides-navigation {
+		z-index: 30;
+		.prev,
+		.next {
+			background: rgba(0,0,0,0.8);
+			color: $white;
+			display: block;
+			font-size: 2rem;
+			height: 3rem;
+			line-height: 3rem;
+			opacity: 0.2;
+			text-align: center;
+			width: 3rem;
+		}
+	}
+	.slides-pagination {
+		z-index: 30;
+		a {
+			border: 2px solid $white;
+			&.current {
+				background: $white;
+			}
+		}
+	}
+	&:hover .slides-navigation {
+		.prev,
+		.next {
+			opacity: 1;
+		}
+	}
+}
+
+	/* 3.1. Slider content
+	-----------------------------------------------------------*/
+
+	#slider-content {
+		left: 0;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 100%;
+		z-index: 20;
+		@include translate(-50%);
+		h1,
+		h4 {
+			color: $white;
+			margin: 0;
+		}
+	}
+
+	/* 3.2. Countdown
+	-----------------------------------------------------------*/
+
+	ul#countdown {
+		list-style: none;
+		margin: 2rem 0 0;
+		padding: 0;
+		display: block;
+		text-align: center;
+		li {
+			background: $button-primary;
+			display: inline-block;
+			margin: 0.3rem 0.25rem;
+			padding: 1rem 0;
+			width: 7rem;
+			span {
+				color: $white;
+				font-family: $font-heading;
+				font-size: 3rem;
+				line-height: 3rem;
+			}
+			p {
+				color: $white;
+				font-family: $font-heading;
+				font-size: 1.5rem;
+				line-height: 1.5rem;
+				margin: 0;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+/* 4. Content
+===============================================================*/
+
+	/* 4.1. Welcome
+	-----------------------------------------------------------*/
+
+	.square {
+		color: $brand;
+		font-size: 2rem;
+		height: 5rem;
+		line-height: 5rem;
+		margin: 1rem 0;
+		text-align: center;
+		width: 5rem;
+		@include transition(0.3s);
+		&:before {
+			position: relative;
+			z-index: 2;
+		}
+		&:after {
+			@include rotate(45deg);
+			@include transition(1s);
+			background: $alt;
+			content: "";
+			display: block;
+			height: 5rem;
+			line-height: 5rem;
+			margin-top: -5rem;
+			position: relative;
+			width: 5rem;
+			z-index: 1;
+		}
+		&.white {
+			&:after {
+				background: $white;
+			}
+		}
+	}
+
+		.service:hover .square {
+			color: $white;
+			&:after {
+				background: $brand;
+			}
+		}
+
+	/* 4.2. Speaker lists
+	-----------------------------------------------------------*/
+
+		/* 4.2.1. Speaker list type 1
+		-------------------------------------------------------*/
+
+		.speakers1 {
+			.speaker {
+				.flipper {
+					margin-bottom: 30px;
+					position: relative;
+					text-align: center;
+					-webkit-perspective: 600px;
+					-moz-perspective: 600px;
+					.front,
+					.back {
+						background: $background-body;
+						@include transition(0.3s);
+						-webkit-transform-style: preserve-3d;
+						-moz-transform-style: preserve-3d;
+						-webkit-backface-visibility: hidden;
+						-moz-backface-visibility: hidden;
+					}
+					.front {
+						@include rotateY(0deg);
+						h5 {
+							margin: 0;
+							padding: 1rem 1rem 0 1rem;
+						}
+						h6 {
+							color: $brand;
+							margin: 0;
+							padding: 0 1rem 1rem 1rem;
+						}
+					}
+					.back {
+						bottom: 0;
+						left: 0;
+						position: absolute;
+						right: 0;
+						top: 0;
+						@include rotateY(-180deg);
+						.content {
+							padding: 0 1rem;
+							position: absolute;
+							top: 50%;
+							width: 100%;
+							@include translate(-50%);
+							p {
+								margin: 1rem 0;
+							}
+							i {
+								font-size: 1.5rem;
+								margin: 0 0.5rem;
+							}
+						}
+					}
+					&.flip {
+						.front {
+							@include rotateY(180deg);
+						}
+						.back {
+							@include rotateY(0deg);
+						}
+					}
+				}
+			}
+			&.alt-color {
+				.flipper {
+					.front,
+					.back {
+						background: $alt;
+					}
+				}
+			}
+		}
+
+		/* 4.2.2. Speaker list type 2
+		-------------------------------------------------------*/
+
+		.speakers2 {
+			position: relative;
+			width: 100%;
+			.speaker {
+				float: left;
+				position: relative;
+				text-align: center;
+				text-transform: uppercase;
+				-webkit-perspective: 600px;
+				-moz-perspective: 600px;
+				img,
+				.back {
+					@include transition(0.3s);
+					-webkit-transform-style: preserve-3d;
+					-moz-transform-style: preserve-3d;
+					-webkit-backface-visibility: hidden;
+					-moz-backface-visibility: hidden;
+				}
+				img {
+					@include rotateY(0deg);
+				}
+				.back {
+					background: $alt;
+					bottom: 0;
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+					@include rotateY(-180deg);
+					.content {
+						left: 0;
+						padding: 0 1rem;
+						position: absolute;
+						top: 50%;
+						width: 100%;
+						@include translate(-50%);
+						.name {
+							color: $black;
+							display: block;
+							font-family: $font-heading;
+							font-size: 1.5rem;
+							line-height: 1.5rem;
+						}
+						.title {
+							color: $brand;
+							display: block;
+							font-family: $font-heading;
+						}
+					}
+				}
+				&.flip {
+					img {
+						@include rotateY(180deg);
+					}
+					.back {
+						@include rotateY(0deg);
+					}
+				}
+			}
+		}
+
+		/* 4.2.3. Speaker list type 3
+		-------------------------------------------------------*/
+
+		.speakers3 {
+			.row {
+				margin-top: 2rem;
+				a {
+					img {
+						border: 5px solid transparent;
+						@include transition(0.3s);
+					}
+					&:hover {
+						img {
+							border: 5px solid $brand;
+						}
+					}
+				}
+				.info-box {
+					padding-left: 15px;
+					position: relative;
+					&:before {
+						background: $alt;
+						content: "";
+						display: block;
+						height: 30px;
+						left: 0;
+						position: absolute;
+						top: 55px;
+						width: 30px;
+						@include rotate(45deg);
+					}
+					.content {
+						background: $alt;
+						padding: 2rem 2rem 0.1rem 2rem;
+						h4 {
+							margin: 0;
+							a {
+								color: $color-heading;
+								&:hover {
+									color: lighten($color-heading, 15%);
+								}
+							}
+						}
+						h6 {
+							color: $brand;
+						}
+					}
+					footer {
+						background: darken($alt, 3%);
+						color: $color-heading;
+						padding: 1rem 2rem;
+						ul {
+							list-style: none;
+							margin: 0;
+							padding: 0;
+							li {
+								display: inline;
+								margin-right: 1rem;
+								i {
+									color: $brand;
+									margin-right: 0.5rem;
+								}
+								a {
+									color: $color-heading;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* 4.2.4. Speaker list type 4
+		-------------------------------------------------------*/
+
+		.speakers4 {
+			.speaker {
+				margin-bottom: 2rem;
+				.hover {
+					display: block;
+					position: relative;
+					&:before {
+						background: $brand;
+						content: "";
+						height: 0;
+						left: 50%;
+						opacity: 0;
+						position: absolute;
+						top: 50%;
+						width: 0;
+						z-index: 1;
+						@include transition(0.3s);
+					}
+					&:after {
+						color: $white;
+						content: "\f0c1";
+						font-family: "FontAwesome";
+						font-size: 2rem;
+						left: 0;
+						opacity: 0;
+						position: absolute;
+						text-align: center;
+						top: 0;
+						width: 100%;
+						z-index: 2;
+						@include translate(-50%);
+						@include transition(0.3s);
+					}
+				}
+				&:hover {
+					.hover {
+						&:before {
+							height: 100%;
+							left: 0;
+							opacity: 0.75;
+							top: 0;
+							width: 100%;
+						}
+						&:after {
+							opacity: 1;
+							top: 50%;
+						}
+					}
+				}
+				.content {
+					background: $alt;
+					padding: 2rem;
+					h4 {
+						margin: 0;
+						a {
+							color: $color-heading;
+							&:hover {
+								color: lighten($color-heading, 15%);
+							}
+						}
+					}
+					h6 {
+						color: $brand;
+					}
+					p {
+						height: 8rem;
+						margin: 0;
+						overflow: hidden;
+					}
+				}
+				footer {
+					background: darken($alt, 3%);
+					padding: 1rem 2rem;
+					ul {
+						list-style: none;
+						margin: 0;
+						padding: 0;
+						li {
+							display: inline;
+							margin-right: 1rem;
+						}
+					}
+				}
+			}
+		}
+
+	/* 4.3. Schedule
+	-----------------------------------------------------------*/
+
+		/* 4.3.1. Schedule type 1
+		-------------------------------------------------------*/
+
+		.schedule1 {
+			.row {
+				margin-top: 2rem;
+				a {
+					img {
+						border: 5px solid transparent;
+						@include transition(0.3s);
+					}
+					&:hover {
+						img {
+							border: 5px solid $brand;
+						}
+					}
+				}
+				.info-box {
+					padding-left: 15px;
+					position: relative;
+					&:before {
+						background: $alt;
+						content: "";
+						display: block;
+						height: 30px;
+						left: 0;
+						position: absolute;
+						top: 55px;
+						width: 30px;
+						@include rotate(45deg);
+					}
+					.content {
+						background: $alt;
+						padding: 2rem 2rem 0.1rem 2rem;
+						h4 {
+							a {
+								color: $color-heading;
+								&:hover {
+									color: lighten($color-heading, 15%);
+								}
+							}
+						}
+					}
+					footer {
+						background: darken($alt, 3%);
+						color: $color-heading;
+						padding: 1rem 2rem;
+						ul {
+							list-style: none;
+							margin: 0;
+							padding: 0;
+							li {
+								display: inline;
+								margin-right: 2rem;
+								i {
+									color: $brand;
+									margin-right: 0.5rem;
+								}
+								a {
+									color: $color-heading;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* 4.3.2. Schedule type 2
+		-------------------------------------------------------*/
+
+		.schedule2 {
+			.talk {
+				margin-top: 2rem;
+			}
+			.time {
+				margin-top: 2rem;
+			}
+			.time,
+			.venue {
+				color: $black;
+				text-align: right;
+				&:before {
+					color: $brand;
+					font-family: "FontAwesome";
+					margin-right: 0.5rem;
+				}
+			}
+			.time:before {
+				content: "\f017";
+			}
+			.venue:before {
+				content: "\f041";
+			}
+			.content-box {
+				background: $alt;
+				margin-left: 20px;
+				padding: 2rem;
+				position: relative;
+				.trigger {
+					background: $brand;
+					@include border-radius(50%);
+					color: $white;
+					cursor: pointer;
+					font-size: 1.5rem;
+					height: 40px;
+					left: -20px;
+					line-height: 40px;
+					position: absolute;
+					text-align: center;
+					top: 2rem;
+					width: 40px;
+					@include transition(0.3s);
+					&.active {
+						@include rotateX(180deg);
+					}
+				}
+				h4 {
+					margin: 0;
+					a {
+						color: $black;
+						&:hover {
+							color: $brand;
+						}
+					}
+				}
+				.speaker {
+					color: $black;
+					margin: 0;
+					&:before {
+						content: "\f130";
+						color: $brand;
+						font-family: "FontAwesome";
+						margin-right: 0.5rem;
+					}
+				}
+				.hidden-content {
+					display: none;
+					margin-top: 2rem;
+				}
+			}
+		}
+
+		/* 4.3.3. Schedule type 3
+		-------------------------------------------------------*/
+
+		.schedule3 {
+			.table-bordered {
+				border-bottom: 1px solid $color-border;
+				thead {
+					tr {
+						th {
+							background: $alt;
+							border-bottom: 1px solid $color-border;
+							color: $black;
+							font-weight: normal;
+							text-align: center;
+							white-space: nowrap;
+							&:before {
+								color: $brand;
+								content: "\f017";
+								font-family: "FontAwesome";
+								margin-right: 0.5rem;
+							}
+							&:first-child:before {
+								display: none;
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						th,
+						td {
+							border-bottom: 1px solid $color-border;
+							padding: 1rem;
+							text-align: center;
+							vertical-align: middle;
+						}
+						th {
+							background: $alt;
+							color: $black;
+							font-weight: normal;
+							&:before {
+								color: $brand;
+								content: "\f073";
+								font-family: "FontAwesome";
+								margin-right: 0.5rem;
+							}
+						}
+						td {
+							&.talk {
+								background: $brand;
+								color: $white;
+							}
+							a {
+								color: $white;
+								display: block;
+								font-weight: bold;
+								&.speaker:before {
+									content: "\f130";
+									font-family: "FontAwesome";
+									font-weight: normal;
+									margin-right: 0.5rem;
+								}
+							}
+						}
+						&:nth-child(even) {
+							td {
+								&.talk {
+									background: darken($brand,10%);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* 4.3.4. Schedule type 4
+		-------------------------------------------------------*/
+
+		.schedule4 {
+			.day {
+				border-bottom: 1px solid $color-border;
+				margin: 0;
+				&:nth-child(even) {
+					background: $alt;
+				}
+				.date {
+					color: $black;
+					font-weight: bold;
+					padding-bottom: 1rem;
+					padding-top: 1rem;
+					&:before {
+						color: $brand;
+						content: "\f073";
+						font-family: "FontAwesome";
+						font-weight: normal;
+						margin-right: 0.5rem;
+					}
+				}
+				.row {
+					border-bottom: 1px solid $color-border;
+					padding-bottom: 1rem;
+					padding-top: 1rem;
+					.date,
+					.time,
+					.subject,
+					.speaker,
+					.venue {
+						padding-left: 38px;
+						position: relative;
+						&:before {
+							color: $brand;
+							left: 15px;
+							font-family: "FontAwesome";
+							font-weight: normal;
+							position: absolute;
+							top: 0;
+						}
+					}
+					.time {
+						&:before {
+							content: "\f017";
+						}
+					}
+					.subject {
+						font-weight: bold;
+						&:before {
+							content: "\f0f6";
+						}
+						a {
+							color: $black;
+							&:hover {
+								color: $brand;
+							}
+						}
+					}
+					.speaker {
+						&:before {
+							content: "\f130";
+						}
+						a {
+							color: $black;
+							&:hover {
+								color: $brand;
+							}
+						}
+					}
+					.venue {
+						&:before {
+							content: "\f041";
+						}
+					}
+					&:last-child {
+						border: 0;
+					}
+				}
+			}
+		}
+
+	/* 4.4. Features
+	-----------------------------------------------------------*/
+
+	.feature {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		overflow: hidden;
+		.text {
+			padding: 4rem 4rem 2rem 4rem;
+			h5 {
+				margin: 0;
+			}
+			h6 {
+				color: $brand;
+			}
+			&.light {
+				background: $alt;
+			}
+			&.dark {
+				background: $color-heading;
+				h5 {
+					color: $white;
+				}
+			}
+		}
+		.image {
+			background-position: center center;
+			background-size: cover;
+		}
+	}
+
+	/* 4.5. Price tables
+	-----------------------------------------------------------*/
+
+		/* 4.5.1. Price table 1
+		-------------------------------------------------------*/
+
+		.prices1 {
+			margin: 0;
+			.pricetable {
+				background: $alt;
+				border: 10px solid $white;
+				box-shadow: 0 0 2px $color-border;
+				margin: 2rem 0;
+				overflow: hidden;
+				padding: 3rem 1rem;
+				position: relative;
+				&.popular {
+					background: $background-body;
+					border: 10px solid $alt;
+					box-shadow: none;
+					margin: 0;
+					padding: 5rem 1rem;
+				}
+				h5 {
+					margin: 0;
+					padding: 0;
+				}
+				h6 {
+					color: $brand;
+					margin: 0;
+				}
+				.price {
+					color: $black;
+					font-family: $font-heading;
+					font-size: 4rem;
+					line-height: 4rem;
+					padding: 3rem 0;
+					text-transform: uppercase;
+					sup,
+					sub {
+						color: $brand;
+						font-size: 1.5rem;
+						position: relative;
+					}
+					sup {
+						top: -2rem;
+					}
+					sub {
+						top: 0;
+					}
+				}
+				ul {
+					list-style: none;
+					margin: 0 0 2rem;
+					padding: 0;
+					li {
+						line-height: 3rem;
+					}
+				}
+				.discount {
+					background: $brand;
+					color: $white;
+					font-family: $font-heading;
+					height: 120px;
+					padding-top: 85px;
+					position: absolute;
+					right: -60px;
+					text-align: center;
+					top: -60px;
+					width: 120px;
+					@include rotate(45deg);
+				}
+			}
+		}
+
+		/* 4.5.2. Price table 2
+		-------------------------------------------------------*/
+
+		.prices2 {
+			margin: 0;
+			.pricetable {
+				background: $alt;
+				border: 10px solid $white;
+				box-shadow: 0 0 2px $color-border;
+				overflow: hidden;
+				padding: 3rem 1rem;
+				position: relative;
+				&.popular {
+					background: $background-body;
+					border: 10px solid $alt;
+					box-shadow: none;
+					margin: 0;
+				}
+				h5 {
+					margin: 0;
+					padding: 0;
+				}
+				h6 {
+					color: $brand;
+					margin: 0;
+				}
+				.price {
+					color: $black;
+					font-family: $font-heading;
+					font-size: 4rem;
+					line-height: 4rem;
+					padding: 3rem 0;
+					text-transform: uppercase;
+					sup,
+					sub {
+						color: $brand;
+						font-size: 1.5rem;
+						position: relative;
+					}
+					sup {
+						top: -2rem;
+					}
+					sub {
+						top: 0;
+					}
+				}
+				ul {
+					list-style: none;
+					margin: 0 0 2rem;
+					padding: 0;
+					li {
+						line-height: 3rem;
+					}
+				}
+				.discount {
+					background: $brand;
+					color: $white;
+					font-family: $font-heading;
+					height: 120px;
+					padding-top: 85px;
+					position: absolute;
+					right: -60px;
+					text-align: center;
+					top: -60px;
+					width: 120px;
+					@include rotate(45deg);
+				}
+			}
+		}
+
+		/* 4.5.3. Price table 3
+		-------------------------------------------------------*/
+
+		.prices3 {
+			margin: 0;
+			.pricetable {
+				background: $alt;
+				margin: 2rem 0;
+				overflow: hidden;
+				padding: 0 0 3rem;
+				position: relative;
+				h5 {
+					background: $black;
+					color: $white;
+					margin: 0;
+					padding: 2rem 1rem 0 1rem;
+				}
+				h6 {
+					background: $black;
+					color: $brand;
+					margin: 0;
+					padding: 0 1rem 2rem 1rem;
+				}
+				.price {
+					background: $brand;
+					color: $black;
+					font-family: $font-heading;
+					font-size: 4rem;
+					line-height: 4rem;
+					padding: 1.5rem 0;
+					text-transform: uppercase;
+					sup,
+					sub {
+						color: $white;
+						font-size: 1.5rem;
+						position: relative;
+					}
+					sup {
+						top: -2rem;
+					}
+					sub {
+						top: 0;
+					}
+				}
+				ul {
+					list-style: none;
+					margin: 2rem 1rem;
+					padding: 0;
+					li {
+						line-height: 3rem;
+					}
+				}
+				.discount {
+					background: $brand;
+					color: $white;
+					font-family: $font-heading;
+					height: 120px;
+					padding-top: 85px;
+					position: absolute;
+					right: -60px;
+					text-align: center;
+					top: -60px;
+					width: 120px;
+					@include rotate(45deg);
+				}
+				&.popular {
+					background: $background-body;
+					box-shadow: 0 0 40px rgba(0,0,0,0.1);
+					margin: 0;
+					z-index: 1;
+					h5 {
+						padding: 3rem 1rem 0 1rem;
+					}
+					h6 {
+						padding: 0 1rem 3rem 1rem;
+					}
+					.price {
+						padding: 2.5rem 0;
+					}
+				}
+			}
+		}
+
+		/* 4.5.4. Price table 4
+		-------------------------------------------------------*/
+
+		.prices4 {
+			margin: 0;
+			.pricetable {
+				background: $alt;
+				overflow: hidden;
+				padding: 0 0 3rem;
+				position: relative;
+				h5 {
+					background: $black;
+					color: $white;
+					margin: 0;
+					padding: 2rem 1rem 0 1rem;
+				}
+				h6 {
+					background: $black;
+					color: $brand;
+					margin: 0;
+					padding: 0 1rem 2rem 1rem;
+				}
+				.price {
+					background: $brand;
+					color: $black;
+					font-family: $font-heading;
+					font-size: 4rem;
+					line-height: 4rem;
+					padding: 1.5rem 0;
+					text-transform: uppercase;
+					sup,
+					sub {
+						color: $white;
+						font-size: 1.5rem;
+						position: relative;
+					}
+					sup {
+						top: -2rem;
+					}
+					sub {
+						top: 0;
+					}
+				}
+				ul {
+					list-style: none;
+					margin: 2rem 1rem;
+					padding: 0;
+					li {
+						line-height: 3rem;
+					}
+				}
+				.discount {
+					background: $brand;
+					color: $white;
+					font-family: $font-heading;
+					height: 120px;
+					padding-top: 85px;
+					position: absolute;
+					right: -60px;
+					text-align: center;
+					top: -60px;
+					width: 120px;
+					@include rotate(45deg);
+				}
+				&.popular {
+					background: darken($alt,3%);
+					margin: 0;
+					z-index: 1;
+					h5,
+					h6 {
+						background: darken($black,3%);
+					}
+					.price {
+						background: darken($brand,3%);
+					}
+				}
+			}
+		}
+
+		/* 4.5.5. Price table 5
+		-------------------------------------------------------*/
+
+		.prices5 {
+			margin: 0;
+			.pricetable {
+				background: $alt;
+				overflow: hidden;
+				padding: 0 0 3rem;
+				position: relative;
+				h5 {
+					background: $black;
+					color: $white;
+					margin: 0;
+					padding: 2rem 1rem 0 1rem;
+				}
+				h6 {
+					background: $black;
+					color: $brand;
+					margin: 0;
+					padding: 0 1rem 2rem 1rem;
+				}
+				.price {
+					background: $brand;
+					color: $black;
+					font-family: $font-heading;
+					font-size: 4rem;
+					line-height: 4rem;
+					padding: 1.5rem 0;
+					text-transform: uppercase;
+					sup,
+					sub {
+						color: $white;
+						font-size: 1.5rem;
+						position: relative;
+					}
+					sup {
+						top: -2rem;
+					}
+					sub {
+						top: 0;
+					}
+				}
+				ul {
+					list-style: none;
+					margin: 2rem 1rem;
+					padding: 0;
+					li {
+						line-height: 3rem;
+					}
+				}
+				.discount {
+					background: $brand;
+					color: $white;
+					font-family: $font-heading;
+					height: 120px;
+					padding-top: 85px;
+					position: absolute;
+					right: -60px;
+					text-align: center;
+					top: -60px;
+					width: 120px;
+					@include rotate(45deg);
+				}
+				&.popular {
+					background: darken($alt,3%);
+					margin: 0;
+					z-index: 1;
+					h5,
+					h6 {
+						background: darken($black,3%);
+					}
+					.price {
+						background: darken($brand,3%);
+					}
+				}
+			}
+		}
+
+	/* 4.6. Forms
+	-----------------------------------------------------------*/
+
+	.form-control {
+		background: $white;
+		border: 1px solid $light;
+		@include border-radius($radius-default);
+		box-shadow: none;
+		font-size: 1rem;
+		height: auto;
+		line-height: 1.25rem;
+		padding: $padding-default;
+	}
+
+	/* 4.7. Tabs
+	-----------------------------------------------------------*/
+
+	.nav-tabs {
+		font-family: $font-heading;
+		text-transform: uppercase;
+		li {
+			a {
+				border: 0;
+				border-bottom: 1px solid $color-border;
+				color: $color-heading;
+				&:hover,
+				&:focus {
+					background: $alt;
+				}
+			}
+			&.active {
+				a,
+				a:hover,
+				a:focus {
+					background: $brand;
+					border: 0;
+					border-bottom: 1px solid $brand;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.tab-content {
+		padding-top: 2rem;
+	}
+
+	/* 4.8. Sponsors list
+	---------------------------------------------------------*/
+
+		/* 4.8.1. Sponsors list 1
+		-------------------------------------------------------*/
+
+		.sponsors1 {
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					margin-bottom: 30px;
+					a {
+						display: block;
+						position: relative;
+						&:before {
+							background: $brand;
+							content: "";
+							height: 0;
+							left: 50%;
+							opacity: 0;
+							position: absolute;
+							top: 50%;
+							width: 0;
+							z-index: 1;
+							@include transition(0.3s);
+						}
+						&:after {
+							content: "\f0c1";
+							color: $white;
+							font-family: "FontAwesome";
+							font-size: 2rem;
+							left: 0;
+							line-height: 2rem;
+							opacity: 0;
+							position: absolute;
+							text-align: center;
+							top: 0;
+							width: 100%;
+							z-index: 2;
+							@include translate(-50%);
+							@include transition(0.3s);
+						}
+						&:hover {
+							&:before {
+								height: 100%;
+								left: 0;
+								opacity: 0.75;
+								top: 0;
+								width: 100%;
+							}
+							&:after {
+								opacity: 1;
+								top: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* 4.8.2. Sponsors list 2
+		-------------------------------------------------------*/
+
+		.sponsors2 {
+			ul {
+				list-style: none;
+				padding: 0;
+				li {
+					margin-bottom: 30px;
+					a {
+						background: $alt;
+						display: block;
+						padding: 1rem;
+						img {
+							opacity: 0.3;
+							@include grayscale(100%);
+							@include transition(0.3s);
+						}
+						&:hover {
+							img {
+								opacity: 1;
+								@include grayscale(0%);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* 4.8.3. Sponsors list 3
+		-------------------------------------------------------*/
+
+		.sponsors3 {
+			ul {
+				list-style: none;
+				display: table;
+				padding: 0;
+				position: relative;
+				width: 100%;
+				&:before {
+					border-left: 1px solid $white;
+					content: "";
+					display: block;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 0;
+					z-index: 1;
+				}
+				&:after {
+					border-top: 1px solid $white;
+					content: "";
+					display: block;
+					height: 0;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+					z-index: 1;
+				}
+				li {
+					border-left: 1px solid $color-border;
+					border-top: 1px solid $color-border;
+					a {
+						display: block;
+						padding: 1rem;
+						img {
+							opacity: 0.3;
+							@include grayscale(100%);
+							@include transition(0.3s);
+						}
+						&:hover {
+							img {
+								opacity: 1;
+								@include grayscale(0%);
+							}
+						}
+					}
+				}
+			}
+		}
+
+	/* 4.9. Venues
+	---------------------------------------------------------*/
+
+	.feature-box {
+		padding: 1rem 0 1rem 4rem;
+		position: relative;
+		.fa {
+			color: $brand;
+			left: 15px;
+			position: absolute;
+			top: 1rem;
+		}
+		h5 {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	/* 4.10. Gallery
+	---------------------------------------------------------*/
+
+	.gallery {
+		margin: 0;
+		a {
+			display: block;
+			padding: 0;
+			position: relative;
+			&:before {
+				background: $brand;
+				content: "";
+				height: 0;
+				left: 50%;
+				opacity: 0;
+				position: absolute;
+				top: 50%;
+				width: 0;
+				z-index: 1;
+				@include transition(0.3s);
+			}
+			&:after {
+				content: "\f002";
+				color: $white;
+				font-family: "FontAwesome";
+				font-size: 2rem;
+				left: 0;
+				line-height: 2rem;
+				opacity: 0;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 100%;
+				z-index: 2;
+				@include translate(-50%);
+				@include transition(0.3s);
+			}
+			&:hover {
+				&:before {
+					height: 100%;
+					left: 0;
+					opacity: 0.75;
+					top: 0;
+					width: 100%;
+				}
+				&:after {
+					opacity: 1;
+					top: 50%;
+				}
+			}
+		}
+	}
+
+	/* 4.11. Counter
+	---------------------------------------------------------*/
+
+	.counter {
+		color: $black;
+		display: inline-block;
+		font-family: $font-heading;
+		font-size: 1.25rem;
+		margin: 1rem 0.5rem;
+		text-align: center;
+		text-transform: uppercase;
+		.number {
+			border: 5px solid $brand;
+			@include border-radius(50%);
+			font-size: 3.5rem;
+			height: 155px;
+			line-height: 150px;
+			margin-bottom: 0.5rem;
+			width: 155px;
+		}
+	}
+
+	/* 4.12. Progress bars
+	---------------------------------------------------------*/
+
+	.progress {
+		background: $alt;
+		border-radius: 0;
+		box-shadow: none;
+		height: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.progress-bar {
+		background: $brand;
+		font-size: 1rem;
+		line-height: 2.5rem;
+		padding: 0 1rem;
+		text-align: right;
+		@include transition(1s);
+	}
+
+/* 5. Footer
+=============================================================*/
+
+footer {
+	.sponsors {
+		background: $alt;
+		padding: 1rem 0;
+		text-align: center;
+		a {
+			display: block;
+			padding: 1rem 0;
+			img {
+				@include grayscale(100%);
+				@include transition(0.3s);
+				opacity: 0.25;
+			}
+			&:hover {
+				img {
+					@include grayscale(0%);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.newsletter {
+	background: url(../images/newsletter.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	h4 {
+		color: $white;
+		margin: 0 0 1rem;
+	}
+	.form-control,
+	.btn {
+		border: 0;
+		height: 2.5rem;
+		line-height: 2.5rem;
+		padding: 0 1rem;
+	}
+	.form-control {
+		width: 320px;
+	}
+}
+
+.footer {
+	background: $black;
+	h4 {
+		color: $white;
+	}
+	a {
+		color: $color-body;
+		&:hover {
+			color: $white;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			margin: 0;
+			padding: 0;
+			a {
+				border-bottom: 1px solid rgba(255,255,255,0.1);
+				display: block;
+				padding: 1rem;
+				&:hover {
+					background: rgba(255,255,255,0.03);
+				}
+				&:before {
+					color: $brand;
+					content: "\f105";
+					font-family: "FontAwesome";
+					margin-right: 0.5rem;
+				}
+			}
+		}
+	}
+}
+
+.credits {
+	background: darken($black,2%);
+	padding: 2rem 0;
+	text-align: center;
+	p {
+		margin: 0;
+	}
+	ul {
+		list-style: none;
+		margin: 1rem 0 0;
+		li {
+			display: inline;			
+			a {
+				margin: 0 0.5rem;
+			}
+		}
+	}
+}
+
+/* 6. Media queries
+===============================================================*/
+
+	/* 6.1. Big screen
+	-----------------------------------------------------------*/
+	@media (min-width: 1200px) {
+
+		html {
+			font-size: 110%;
+		}
+
+		.schedule1 .row .info-box:before,
+		.speakers3 .row .info-box:before {
+			top: 68px;
+		}
+
+		.feature .text {
+			padding: 6rem 6rem 4rem 6rem;
+		}
+
+	}
+
+	/* 6.2. Regular tablets
+	-----------------------------------------------------------*/
+	@media (max-width: 992px) {
+
+		.schedule1 .row .info-box:before,
+		.speakers3 .row .info-box:before {
+			top: 33px;
+		}
+
+		.feature .text {
+			padding: 3rem 3rem 1rem 3rem;
+		}
+
+	}
+
+	/* 6.3. Small tablets
+	-----------------------------------------------------------*/
+	@media (max-width: 780px) {
+
+		body {
+			padding: 0;
+		}
+
+		header {
+			padding: 0;
+		}
+
+		.header-image {
+			display: none;
+		}
+
+		.wsmobileheader {
+			z-index: 2000;
+		}
+
+		.logo {
+			display: none;
+		}
+
+		.schedule1 {
+			.row {
+				img {
+					margin: 0 auto;
+				}
+				.info-box {
+					margin-top: 1rem;
+					padding-left: 0;
+					padding-top: 15px;
+					&:before {
+						left: 50%;
+						margin-left: -15px;
+						top: 0;
+					}
+					footer {
+						ul {
+							li {
+								display: block;
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.speakers3 {
+			.row {
+				img {
+					margin: 0 auto;
+				}
+				.info-box {
+					margin-top: 1rem;
+					padding-left: 0;
+					padding-top: 15px;
+					&:before {
+						left: 50%;
+						margin-left: -15px;
+						top: 0;
+					}
+				}
+			}
+		}
+
+		.feature {
+			display: block;
+			.image {
+				height: 200px;
+			}
+		}
+
+		.newsletter {
+			.form-control {
+				margin: 0 auto;
+				width: 240px;
+			}
+		}
+
+		.pricetable {
+			margin: 15px 0;
+		}
+
+	}

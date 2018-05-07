@@ -1,0 +1,16 @@
+/* js_button style */
+.wpb_vc_button .btn-secondary, option.btn-secondary, select.btn-secondary {
+    color:white;
+    background-color: #222;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#222),to(#222));
+    background-image: -webkit-linear-gradient(top,#222,#222);
+    background-image: linear-gradient(top,#222,#222);
+}
+.wpb_vc_button .btn-danger, option.btn-danger, select.btn-danger  {
+    color:white;
+    background-color: #be1a39 !important;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#be1a39),to(#be1a39)) !important;
+    background-image: -webkit-linear-gradient(top,#be1a39,#be1a39) !important;
+    background-image: linear-gradient(top,#be1a39,#be1a39) !important;
+}
+

@@ -1,0 +1,58 @@
+
+---Downloaded files---
+The import files for: Evnt Demo were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://gsf2018.org
+Data file = /virusadmin/www/wp-content/themes/evnt/demo-data/content.xml
+Widget file = /virusadmin/www/wp-content/themes/evnt/demo-data/widgets.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Footer Sidebar 1 : 
+
+텍스트 - ABOUT - Imported
+
+Footer Sidebar 2 : 
+
+내비게이션 메뉴들 - QUICK LINKS - Imported
+
+Footer Sidebar 3 : 
+
+Address Information Title - GROUP BOOKINGS - Imported
+
+Footer Sidebar 4 : 
+
+Address Information Title - SPONSORING - Imported
+
+Footer bottom widgets : 
+
+Sponsors Widget - No Title - Imported
+Custom Newsletter widget - SIGN UP FOR OUR NEWSLETTER - Imported
+
+Footer social links : 
+
+Social Profiles - No Title - Imported
+
+
+
+---pt-ocdi/after_import---
+

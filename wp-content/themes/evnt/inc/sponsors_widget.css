@@ -1,0 +1,13 @@
+.delete{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10000;
+    background: white;
+}
+.uploaded_img {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
