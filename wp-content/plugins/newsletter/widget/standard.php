@@ -18,7 +18,7 @@ class NewsletterWidget extends WP_Widget {
 
         $instance = array_merge(array('lists_layout' => '',
             'lists_empty_label' => '',
-            'lists_field_label' => ''), $instance);
+            'lists_label' => ''), $instance);
         
         $options_profile = get_option('newsletter_profile');
         //$form = NewsletterSubscription::instance()->get_form_javascript();
@@ -27,8 +27,8 @@ class NewsletterWidget extends WP_Widget {
         $form .= '<div class="tnp tnp-widget">';
         $form .= NewsletterSubscription::instance()->get_subscription_form_html5('widget', null, array(
             'list'=> implode(',', $instance['nl']),
-            'lists_layout' => $instance['lists_layout'],
-            'lists_empty_label' => $instance['lists_empty_label'],
+            'lists_field_layout' => $instance['lists_layout'],
+            'lists_field_empty_label' => $instance['lists_empty_label'],
             'lists_field_label' => $instance['lists_field_label'],
             
             ));
